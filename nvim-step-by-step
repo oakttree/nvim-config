@@ -1,0 +1,39 @@
+neovim instructions for dummies (me) windows users. 
+
+step 1. install Terminal
+step 2. install Chocolatey Package Manager
+step 3. install Python or whatever language you use
+step 4. (for python) do pip install (in the terminal) to set everything neat and nice:
+  - install --user --upgrade pynvim
+step 5. choco install neovim from Terminal (powershell)
+  - make sure folder bin is in PATH (choco will do that for you)
+step 6. create file within C:\Users\XXXXX\AppData\Local named "nvim"
+step 7. run nvim (go inside Terminal, type nvim, enter)
+step 8. get the config in here copy/pasted in there or
+step 8.2 make a file "init.lua" and a folder "lua" in nvim, then make another folder inside lua called whatever of your choice
+step 8.3 write your own config creating .lua files for each feature then call requires in the init.lua file
+  - important: call require like this: require "folder.luafile"
+step 9. run nvim again, PackerSync everything (if you chose Packer or copy/pasted my config)
+step 10. close nvim and open it again, everything should be working
+
+special observations:
+
+copy and paste inside nvim is different, it also has its own clipboard for some reason:
+      | in normal mode press y to copy
+      | to paste, i'd recommend you to create your own keymapping (mine's <space>p)
+to run python:
+      | press ESC, SHIFT, type :python file name or file path (and enter)
+      or
+      | press ESC, type :python % to run the file you're currently in
+to run HTML, or any file:
+      | press ESC, SHIFT, type :silent !start % (and enter)
+
+
+also, try not to name your files with spaces, nvim doesn't like that. use "-"
+
+there are whole foruns and subreddits dedicated to neovim and vim, as well as youtube videos/channels, wtv error you're stuck with,
+i'm sure some nerd has already figured it out and posted the solution somewhere. the community is huge, so don't worry
+
+i recommend the youtube channels ThePrimeagen and chris@machine, i learned everything from them (i don't know much but i can atleast get my config working)
+
+good luck!! 

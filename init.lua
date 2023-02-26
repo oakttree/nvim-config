@@ -1,0 +1,11 @@
+require "thecastle.settings"
+require "thecastle.keymap"
+require "thecastle.plugins"
+require "thecastle.cmp"
+require "thecastle.lsp"
+require "thecastle.telescope"
+require "thecastle.tree"
+require "thecastle.treesitter"
+require "thecastle.startup"
+
+vim.cmd "colorscheme zenburn"
